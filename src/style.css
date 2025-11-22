@@ -1,5 +1,10 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+.card {
     background: white;
+    width: 300px;
+    height: 500px;
+    font-size: 90px;
+    font-family: "Playfair Display", serif;
+    border-radius: 20px;
 }
