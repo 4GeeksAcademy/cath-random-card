@@ -21,14 +21,20 @@
   <body class="bg-success">
     <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
 
-      <button type="button" class="btn btn-secondary mb-4" id="new_card">New Card</button>
+      <button type="button" class="btn btn-secondary mb-4" id="new-card">New Card</button>
 
-      <div class="card p-2 d-flex flex-column justify-content-between">
-        <div class="text-start" id="suit-top"></div>
-        <div class="d-flex align-items-center justify-content-center" id="rank"></div>
-        <div class="text-end" id="suit-bottom"></div>
+      <div class="card d-flex flex-column justify-content-between">
+        <!-- Top suit -->
+        <div class="text-start w-100" id="suit-top"></div>
+
+        <!-- Rank -->
+        <div class="d-flex align-items-center justify-content-center flex-grow-1" id="rank"></div>
+
+        <!-- Bottom suit -->
+        <div class="text-end w-100">
+          <span id="suit-bottom" class="flip"></span>
+        </div>
       </div>
-    </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>

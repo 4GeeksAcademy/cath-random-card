@@ -10,12 +10,9 @@ function getRandomElement(array) {
   return(randomElement)
 }
 
-window.onload = function() {
+function updateCard() {
   const randomSuit = getRandomElement(suits);
   const randomRank = getRandomElement(ranks);
-
-  console.log(randomSuit)
-  console.log(randomRank)
 
   const rank = document.getElementById("rank");
   const suit_top = document.getElementById("suit-top");
@@ -24,5 +21,8 @@ window.onload = function() {
   rank.innerHTML = randomRank;
   suit_top.innerHTML = randomSuit;
   suit_bottom.innerHTML = randomSuit;
+}
 
-};
+window.onload = updateCard;
+
+document.getElementById("new-card").addEventListener("click", updateCard);
